@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Function to reverse a two-digit number
+void reverse_two_digit_number() {
+    int num;
+
+    // Get user input
+    printf("Enter a two-digit number: ");
+    scanf("%d", &num);
+
+    // Calculate the last digit and the first digit
+    int last_digit = num % 10;
+    int first_digit = num / 10;
+
+    // Reverse the digits and print the result
+    int reversed_num = last_digit * 10 + first_digit;
+    printf("The reversal is: %d\n", reversed_num);
+}
+
+int main() {
+    reverse_two_digit_number();
+    return 0;
+}
